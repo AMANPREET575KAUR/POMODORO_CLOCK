@@ -1,0 +1,83 @@
+/* General reset and styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Container Styles */
+.container {
+    height: 460px;
+    width: 220px;
+    background-color: rgba(0, 128, 128, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Time Display Section */
+.time-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#timer {
+    font-size: 48px;
+    color: #000;
+}
+
+/* Control Section */
+.control-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.control h3 {
+    font-size: 16px;
+}
+
+#session-time, #break-time {
+    font-size: 24px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #00b8b8;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #c0c0c0;
+}
+
+/* Buttons for Start and Reset */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
